@@ -1,0 +1,13 @@
+name = "superhero-mcp-server"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = false
+
+[vars]
+# Environment variables can be set here or via wrangler secret
+
+# Custom domain configuration
+routes = [
+  { pattern = "superhero-mcp.aymr.uk/*", custom_domain = true }
+]
